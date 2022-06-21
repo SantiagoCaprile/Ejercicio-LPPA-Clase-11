@@ -1,7 +1,3 @@
-Repositorio para primer parcial de LPPA.
+Repositorio para problematica clase 11. Manejo de APIs
 
 Alumno: Santiago Caprile
-
-Puede visualizar la página en:
-
-https://flyinsoup.github.io/Parcial-1-LPPA/
