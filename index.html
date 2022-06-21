@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="validations.js"></script>
+  <title>Registro</title>
+</head>
+<header>
+  <img src="./img/add-user.ico" alt="user-logo">
+  <p>Registrate GRATIS en nuestra plataforma</p> 
+</header>
+<body>
+  <p>Por favor, complete los siguientes campos</p>
+  <form id="formulario">
+    <div class="row">
+      <fieldset>
+        <label for="nombre">Nombre<span> *</span></label>
+        <input type="text" id="nombre">
+      </fieldset>
+      <fieldset>
+        <label for="apellido">Apellido<span> *</span></label>
+        <input type="text" id="apellido">
+      </fieldset>
+    </div>
+    <div class="row">
+      <fieldset>
+        <label for="email">Email<span> *</span></label>
+        <input type="email" id="email">
+      </fieldset>
+      <fieldset>
+        <label for="edad">Edad<span> *</span></label>
+        <input type="number" id="edad">
+      </fieldset>
+    </div>
+    <div class="row">
+      <fieldset id="sexo">
+        <p>Sexo<span> *</span></p>
+        <div class="opcion">
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="sexo" id="masculino" value="m">
+        </div>
+        <div class="opcion">
+          <label for="femenino">Femenino</label>
+          <input type="radio" name="sexo" id="femenino" value="f">
+        </div>
+        <div class="opcion">
+          <label for="otro">Otro</label>
+          <input type="radio" name="sexo" id="otro" value="x">
+        </div>
+      </fieldset>
+      <fieldset id="intereses">
+        <p>Interes en<span> *</span></p>
+        <div class="opcion">
+          <label for="deportes">Deportes</label>
+          <input type="checkbox" name="interes" value="deportes" id="deportes">
+        </div>
+        <div class="opcion">
+          <label for="musica">Musica</label>
+          <input type="checkbox" name="interes" value="musica" id="musica">
+        </div>
+        <div class="opcion">
+          <label for="juegos">Juegos</label>
+          <input type="checkbox" name="interes" value="juegos" id="juegos">
+        </div>
+        <div class="opcion">
+          <label for="tecnologia">Tecnologia</label>
+          <input type="checkbox" name="interes" value="tecnologia" id="tecnologia">
+        </div>
+      </fieldset>
+    </div>
+    <div class="col">
+      <fieldset>
+        <label for="pais">Pais<span> *</span></label>
+        <select name="pais" id="pais">
+          <option value="" selected disabled hidden>Elija un pais</option>
+          <option value="arg">Argentina</option>
+          <option value="bra">Brasil</option>
+          <option value="chi">Chile</option>
+          <option value="uru">Uruguay</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario"></textarea>
+      </fieldset>
+      <button type="submit" class="boton-primario" id="boton-enviar">Enviar</button>
+    </div>
+  </form>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>BIENVENIDO!!!</h2>
+        <span class="close">&times;</span>
+        <p>Por favor, verifique que la informacion sea correcta</p>
+      </div>
+      <div class="modal-body">
+        <!--los campos se cargaran segun lo que ponga el usuario-->
+        <p id="frase1"></p>
+        <p id="frase2"></p>
+        <p id="frase4"></p>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <p>Formulario para primer parcial LPPA - UAI</p>
+  <p>Santiago Caprile</p>
+</footer>
+</html>
