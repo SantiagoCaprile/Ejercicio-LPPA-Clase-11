@@ -15,7 +15,7 @@ window.onload = function () {
 
 
   function mandarDatos(){
-    fetch(`http://curso-dev-2021.herokuapp.com/newsletter/?name=${nombre.value + "-" + apellido.value}&email=${email.value}&age=${edad.value}&comment=${comentario.value}`)
+    fetch(`https://curso-dev-2021.herokuapp.com/newsletter/?name=${nombre.value + "-" + apellido.value}&email=${email.value}&age=${edad.value}&comment=${comentario.value}`)
     .then(response => response.json())
     .then(data => {
       mostrarModal(data)
